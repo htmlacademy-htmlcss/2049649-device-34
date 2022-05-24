@@ -5,38 +5,80 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-  <nav>
-    <h1>device</h1>
-    <form action='#' method="get">
-      <input type="text" name="search" id='catalogue-search' value="Текст поиска">
+  <header class="main-header">
+    <nav>
+      <h1>device</h1>
+    <form action='#' method="post">
+      <!--<label for="catalogue-search">Текст поиска</label>-->
+      <input type="text" name="search" id='catalogue-search' placeholder="Текст поиска">
       <input type="submit" value="Найти">
       <input type="submit" value="Войти">
+      <input type="submit" value="Сравнить">
+      <input type="submit" value="Корзина">
     </form>
+    <label for="catalogue-button-search">КАТАЛОГ ТОВАРОВ</label>
+    <input type="button" name="button-search" id='catalogue-button-search'>
+    </nav>
     <ul class="user-menu">
-      <li>Доставка</li>
-      <li>Гарантия</li>
-      <li>Контакты</li>
+      <li class="delivery-user-menu">
+        <a href="#">Доставка</a>
+      </li>
+      <li class="warranty-user-menu">
+        <a href="#">Гарантия</a>
+      </li>
+      <li class="contacts-user-menu">
+        <a href="#">Контакты</a>
+      </li>
     </ul>
-  </nav>
-    <header class="main-header">
+  </header>
+  <main>
+    <img src="#" width="560" height="560" alt='Квадрокоптер'>
+      <p>Порхает как бабочка, <br> жалит как пчела!</br></p>
+      <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+      <a href="#">ПОДРОБНЕЕ</a>
+      <br>
+      <table>
+        <tr>
+          <td>Дальность полета</td>
+          <td>Радиус поражения</td>
+        </tr>
+        <tr>
+          <td>800 м</td>
+          <td>50 м</td>
+        </tr>
+      </table>
+
       <section class="products">
         <!--<h2>Товары</h2>-->
         <ul>
-          <li><h3>Виртуальная
-          реальность</h3></li>
-          <li><h3>Моноподы
-          для селфи</h3></li>
-          <li><h3>Экшн-камеры</h3></li>
-          <li><h3>Фитнес-браслеты</h3></li>
-          <li><h3>Умные часы</h3></li>
-          <li><h3>Квадрокоптеры</h3></li>
+            <img src="#" width="160" height="160" alt='Виртуальная реальность'>
+          <li><h4>Виртуальная<br>
+          реальность</h4></li>
+            <img src="#" width="160" height="160" alt='Моноподы для селфи'>
+          <li><h4>Моноподы<br>
+          для селфи</h4></li>
+            <img src="#" width="160" height="160" alt='Экшн-камеры'>
+          <li><h4>Экшн-камеры</h4></li>
+            <img src="#" width="160" height="160" alt='Фитнес-браслеты'>
+          <li><h4>Фитнес-браслеты</h4></li>
+            <img src="#" width="160" height="160" alt='Умные часы'>
+          <li><h4>Умные часы</h4></li>
+            <img src="#" width="160" height="160" alt='Квадрокоптеры'>
+          <li><h4>Квадрокоптеры</h4></li>
         </ul>
       </section>
+    <section>
+      <a href="#">Доставка</a>
+      <a href="#">Гарантия</a>
+      <a href="#">Кредит</a>
+      <h2>Доставка</h2>
+      <p>Мы с удовольствием доставим ваш товар прямо
+        к вашему подъезду совершенно бесплатно! Ведь
+        мы неплохо заработаем, поднимая его на ваш этаж.</p>
+    </section>
 
-    </header>
-    <main>
       <section class="companies">
-        <h1>О нас</h1>
+        <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
         <ul>
@@ -49,7 +91,24 @@
 
     </main>
     <footer class="main-footer">
-
+      <h2>device</h2>
+      <address>
+        Санкт-Петербург, набережная<br>
+        реки Карповки, 5, литера П.
+        Тел.: +7 (812) 812-12-12
+      </address>
+      <ul class="user-menu user-menu-footer">
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <p><small>.html academy</small></p>
     </footer>
 
   </body>
