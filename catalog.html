@@ -6,29 +6,32 @@
 </head>
 <body>
 <header class="page-header">
-  <nav class="current-navigation">
-    <a class="visually-hidden" href="index.html">device</a>
-    <img class="logo" src="#" alt="Логотип интернет-магазина «Девайс»">
+  <nav class="main-navigation">
+    <a class="navigation-logo" href="index.html">
+      <img class="logo" src="#" alt="Логотип интернет-магазина «Девайс»">
+    </a>
     <form class="search-form" action='#' method="post">
-      <!--<label for="catalogue-search">Текст поиска</label>-->
-      <input name="search-text" type="text" id='catalogue-search-id' placeholder="Текст поиска">
+      <label for="catalogue-search" class="visually-hidden">Текст поиска</label>
+      <input name="search-text" type="text" id='catalogue-search' placeholder="Текст поиска">
       <input name="search" type="submit" id='search-id' value="Найти">
-      <input name="log-on" type="button" id='log-on-id' value="Войти">
-      <input name="compare" type="button" id='compare-id' value="Сравнить">
-      <input name="shopping-cart" type="button" id='shopping-cart-id' value="Корзина">
     </form>
-    <form>
-      <label for="catalogue-search-button">КАТАЛОГ ТОВАРОВ</label>
-      <input type="button" name="button-search" id='catalogue-search-button' value="Открыть">
-    </form>
+    <button name="button log-on" type="button">
+      <span class="log-on-span">Войти</span>
+    </button>
+    <a class="compare" href="#">Сравнить</a>
+    <a class="shopping-cart" href="#">Корзина</a>
+
+    <button class='button button-search' type="button">
+      <span class="visually-hidden">КАТАЛОГ ТОВАРОВ</span>
+    </button>
     <ul class="navigation-menu">
-      <li class="delivery-navigation-item">
+      <li class="navigation-menu-item">
         <a class='delivery-navigation-link' href="#">Доставка</a>
       </li>
-      <li class="warranty-navigation-item">
+      <li class="navigation-menu-item">
         <a class='warranty-navigation-link' href="#">Гарантия</a>
       </li>
-      <li class="contacts-navigation-item">
+      <li class="navigation-menu-item">
         <a class='contacts-navigation-link' href="#">Контакты</a>
       </li>
     </ul>
@@ -53,45 +56,44 @@
 
   <section class="catalog-products">
     <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-  </section>
   <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
     <fieldset class="catalog-filter-group">
       <legend class="catalog-filter-title">Цвет</legend>
-      <ul class="catalog-filter-list">
-        <li class="catalog-filter-item">
-      <label class="control">
-        <input class="control-input" type="checkbox" name="color-black" checked>
+        <ul class="catalog-filter-list">
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="color-black" checked>
 
-        Черный
-      </label>
+          Черный
+            </label>
         </li>
         <li class="catalog-filter-item">
           <label class="control">
             <input class="control-input" type="checkbox" name="color-white" checked>
 
-            Белый
-          </label>
+          Белый
+            </label>
         </li>
         <li class="catalog-filter-item">
           <label class="control">
             <input class="control-input" type="checkbox" name="color-blue">
 
-            Синий
-          </label>
+          Синий
+            </label>
         </li>
         <li class="catalog-filter-item">
           <label class="control">
             <input class="control-input" type="checkbox" name="color-red">
 
-            Красный
-          </label>
+          Красный
+            </label>
         </li>
         <li class="catalog-filter-item">
           <label class="control">
             <input class="control-input" type="checkbox" name="color-pink">
 
-            Розовый
-          </label>
+          Розовый
+            </label>
         </li>
       </ul>
     </fieldset>
@@ -131,17 +133,16 @@
     <span class="visually-hidden">От наихудших</span>
   </a>
 
-  <ul class="product-list">
+  <ol class="product-list">
     <li class="product-card">
-    <a class="product-card-link" href="product.html">
+    <a class="product-card-link" href="#">
       <img class="product-card-image" src="#" alt="Любительская селфи-палка">
       <h3 class="product-card-title">Любительская<br>
         селфи-палка</h3>
     </a>
     <span class="product-card-price">500 ₽</span>
     <a class="product-card-button button" href="#">Подробнее</a>
-  </li>
-
+    </li>
     <li class="product-card">
       <a class="product-card-link" href="#">
         <img class="product-card-image" src="#" alt="Профессиональная селфи-палка">
@@ -167,9 +168,10 @@
       <span class="product-card-price">1 500 ₽</span>
       <a class="product-card-button button" href="#">Подробнее</a>
     </li>
-  </ul>
+  </ol>
 
-  <ul class="pagination">
+  <button class="button pagination-show-more" type="button">Загрузить еще</button>
+  <ol class="pagination">
     <li class="pagination-item">
       <a class="pagination-link pagination-prev pagination-disabled">
         <span class="visually-hidden">Назад</span>
@@ -195,10 +197,8 @@
         <span class="visually-hidden">Вперёд</span>
       </a>
     </li>
-  </ul>
-  <button class="button pagination-show-more" type="button">Загрузить еще</button>
+  </ol>
 </section>
-
 </main>
 
 <footer class="main-footer">
@@ -237,8 +237,7 @@
       </a>
     </li>
   </ul>
-  <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-  <p><small>.html academy</small></p>
+  <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
 </footer>
 </body>
 </html>
