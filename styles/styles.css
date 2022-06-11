@@ -27,6 +27,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
+  font-style: normal;
   color: #444444;
   background-color: #fbf7f4;
 }
@@ -36,11 +37,28 @@ body {
   background-color: #FFE17F;
 }
 
+.search-button {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
+
+.catalogue-button {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
 .navigation-link {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   font-weight: 800;
-  text-align: center;
   color: inherit;
   background-color: #FFE17F;
   text-decoration: none;
@@ -80,6 +98,14 @@ body {
 }
 
 /*тут могут быть кнопки к доставка и т.д*/
+.advantages-item-button {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 .advantages-item {
   font-family: "Raleway", sans-serif;
@@ -149,6 +175,14 @@ body {
 }
 
 /*тут кнопка подписаться*/
+.email-button {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 .main-footer {
   color: #FFFFFF;
@@ -156,5 +190,29 @@ body {
 }
 
 .footer-contacts-address {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: #FFFFFF;
+  background-color: #444444;
+}
 
+.footer-contacts-phone {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+.menu-footer-link {
+  color: inherit;
+  background-color: #444444;
+}
+
+.media {
+  color: #FFFFFF;
+  background-color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
 }
