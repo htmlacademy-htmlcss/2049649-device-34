@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс-каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
@@ -10,31 +11,28 @@
     <a class="navigation-logo" href="index.html">
       <img class="logo" src="images/logo-device.svg" width="145" height="37" alt="Логотип интернет-магазина «Девайс»">
     </a>
-
     <nav class="main-navigation">
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="catalogue-search" class="visually-hidden">Текст поиска</label>
-        <input name="search-text" type="text" id="catalogue-search" placeholder="Текст поиска">
-        <input name="search" type="submit" id="search-id" value="Найти">
+        <input class="search-input" name="search-text" type="text" id="catalogue-search" placeholder="Текст поиска">
+        <button class="search-button" type="submit">Найти</button>
       </form>
-      <button name="button log-on" type="button">
-        <span class="log-on-span">Войти</span>
-      </button>
-      <a class="compare" href="#">Сравнить</a>
-      <a class="shopping-cart" href="#">Корзина</a>
+      <a class="user-menu" href="#">Войти</a>
+      <a class="user-menu" href="#">Сравнить</a>
+      <a class="user-menu" href="#">Корзина</a>
 
-      <button class="button button-search" type="button">
-        <span class="visually-hidden">КАТАЛОГ ТОВАРОВ</span>
+      <button class="catalogue-button" type="button">
+        <span class="catalogue-span">КАТАЛОГ ТОВАРОВ</span>
       </button>
       <ul class="navigation-menu">
         <li class="navigation-menu-item">
-          <a class="delivery-navigation-link" href="#">Доставка</a>
+          <a class="navigation-link" href="#">Доставка</a>
         </li>
         <li class="navigation-menu-item">
-          <a class="warranty-navigation-link" href="#">Гарантия</a>
+          <a class="navigation-link" href="#">Гарантия</a>
         </li>
         <li class="navigation-menu-item">
-          <a class="contacts-navigation-link" href="#">Контакты</a>
+          <a class="navigation-link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -48,10 +46,10 @@
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог товаров</a>
+          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Моноподы для селфи</a>
+          <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
         </li>
       </ul>
     </header>
@@ -106,6 +104,7 @@
         <button class="button" type="submit">Показать</button>
       </form>
 
+      <div class="sorting-container">
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Популярное</option>
         <option value="new-products">Новинки</option>
@@ -117,6 +116,7 @@
       <a class="button" href="#">
         <span class="visually-hidden">От наихудших</span>
       </a>
+      </div>
 
       <ol class="product-list">
         <li class="product-card">
@@ -178,7 +178,7 @@
           <a class="pagination-link" href="#">15</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#">
+          <a class="pagination-link pagination-prev pagination-next" href="#">
             <span class="visually-hidden">Вперёд</span>
           </a>
         </li>
@@ -190,34 +190,34 @@
     <img class="logo" src="images/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
     <h2 class="visually-hidden">Давайте дружить</h2>
     <address>
-      <p class="footer-contacts-address-text">Санкт-Петербург, набережная<br>
+      <p class="footer-contacts-address">Санкт-Петербург, набережная<br>
         реки Карповки, 5, литера П.</p>
       <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </address>
     <ul class="navigation-menu menu-footer">
       <li class="delivery-navigation-item menu-footer-item">
-        <a class="delivery-navigation-link menu-footer-link" href="#">Доставка</a>
+        <a class="navigation-link menu-footer-link" href="#">Доставка</a>
       </li>
       <li class="warranty-navigation-item menu-footer-item">
-        <a class="warranty-navigation-link menu-footer-link" href="#">Гарантия</a>
+        <a class="navigation-link menu-footer-link" href="#">Гарантия</a>
       </li>
       <li class="contacts-navigation-item menu-footer-item">
-        <a class="contacts-navigation-link menu-footer-link" href="#">Контакты</a>
+        <a class="navigation-link menu-footer-link" href="#">Контакты</a>
       </li>
     </ul>
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="https://t.me/htmlacademy" target="_blank">
+        <a class="media-link" href="https://t.me/htmlacademy" target="_blank">
           <span class="visually-hidden">Telegram</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+        <a class="media-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
           <span class="visually-hidden">YouTube</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://twitter.com/htmlacademy_ru" target="_blank">
+        <a class="media-link" href="https://twitter.com/htmlacademy_ru" target="_blank">
           <span class="visually-hidden">Twitter</span>
         </a>
       </li>
