@@ -37,6 +37,15 @@ body {
   background-color: #FFE17F;
 }
 
+.search-input {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
+
 .search-button {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -172,6 +181,15 @@ body {
   line-height: 50px;
   font-weight: 800;
   color: #000000;
+}
+
+.email-input {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #444444;
 }
 
 /*тут кнопка подписаться*/
