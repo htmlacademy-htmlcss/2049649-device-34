@@ -40,17 +40,121 @@ body {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   font-weight: 800;
-  color: inherit;
   text-align: center;
+  color: inherit;
   background-color: #FFE17F;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .user-menu {
-  color: inherit;
   text-align: center;
+  color: inherit;
   background-color: #FFE17F;
   text-decoration: none;
 }
 
+.slider-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.features-def {
+  font-size: 36px;
+  color: #000000;
+}
+
+.features-term {
+  font-size: 16px;
+}
+
+.product-category-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  text-decoration: none;
+}
+
+/*тут могут быть кнопки к доставка и т.д*/
+
+.advantages-item {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.delivery-special-offer {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 800;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.companies-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.companies-item {
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.button {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.contacts-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contacts-phone {
+  font-style: normal;
+  color: #444444;
+}
+
+.newsletter-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+/*тут кнопка подписаться*/
+
+.main-footer {
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+.footer-contacts-address {
+
+}
