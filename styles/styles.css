@@ -63,6 +63,7 @@ body {
   font-style: normal;
   color: #000000;
   background-color: #FFE17F;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -73,6 +74,7 @@ body {
   font-weight: 800;
   color: inherit;
   background-color: #FFE17F;
+  letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -110,6 +112,12 @@ body {
   text-decoration: none;
 }
 
+.product-category-subtitle {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
 /*СЕКЦИЯ С ПРЕИМУЩЕСТВАМИ*/
 .advantages {
   background-color: #F0F0F0;
@@ -121,6 +129,7 @@ body {
   font-weight: 800;
   color: #000000;
   background-color: #F0F0F0;
+  letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -140,6 +149,7 @@ body {
   line-height: 23px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 0.2em;
   text-decoration: none;
   text-align: center;
 }
@@ -156,12 +166,14 @@ body {
   line-height: 20px;
   font-weight: 700;
   color: #000000;
+  letter-spacing: -0.02em;
 }
 
 .button {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   color: #000000;
+  letter-spacing: 0.2em;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -178,6 +190,10 @@ body {
 .contacts-subtitle {
   font-size: 24px;
   font-weight: 700;
+}
+
+.contacts-address-text {
+  font-style: normal;
 }
 
 .contacts-phone {
@@ -215,6 +231,7 @@ body {
   font-weight: 800;
   color: #000000;
   background-color: #F0F0F0;
+  letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -281,13 +298,22 @@ body {
   text-decoration: none;
 }
 
-.catalog-filter-title {
+.product-filter {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .control {
@@ -310,18 +336,16 @@ body {
   background-color: #F0F0F0;
 }
 
-.product-card {
-  rgba(240, 240, 240, 0.8);
-}
-
 .product-card-link {
   text-decoration: none;
 }
 
 .product-card-title {
+  font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   color: #000000;
+  letter-spacing: -0.02em;
 }
 
 .product-card-price {
@@ -332,6 +356,7 @@ body {
 .pagination-show-more {
   font-size: 16px;
   line-height: 19px;
+  color: #000000;
 }
 
 .pagination {
@@ -344,6 +369,7 @@ body {
   text-align: center;
   color: #000000;
   background-color: #EBEBEB;
+  letter-spacing: 0.2em;
   text-decoration: none;
 }
 
