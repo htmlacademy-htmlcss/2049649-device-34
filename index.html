@@ -14,29 +14,27 @@
     <nav class="main-navigation">
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="catalogue-search" class="visually-hidden">Текст поиска</label>
-        <input name="search-text" type="text" id="catalogue-search" placeholder="Текст поиска">
-        <input name="search" type="submit" id="search-id" value="Найти">
+        <input class="search-input" name="search-text" type="text" id="catalogue-search" placeholder="Текст поиска">
+        <button class="search-button" type="submit">Найти</button>
       </form>
-      <button name="button log-on" type="button">
-        <span class="log-on-span">Войти</span>
-      </button>
-      <a class="compare" href="#">Сравнить</a>
-      <a class="shopping-cart" href="#">Корзина</a>
+      <a class="user-menu" href="#">Войти</a>
+      <a class="user-menu" href="#">Сравнить</a>
+      <a class="user-menu" href="#">Корзина</a>
 
-      <button class="button button-search" type="button">
-        <span class="catalogue-button">КАТАЛОГ ТОВАРОВ</span>
-      </button>
-      <ul class="navigation-menu">
-        <li class="navigation-menu-item">
-          <a class="delivery-navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="navigation-menu-item">
-          <a class="warranty-navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="navigation-menu-item">
-          <a class="contacts-navigation-link" href="#">Контакты</a>
-        </li>
-      </ul>
+        <button class="catalogue-button" type="button">
+          <span class="catalogue-span">КАТАЛОГ ТОВАРОВ</span>
+        </button>
+        <ul class="navigation-menu">
+          <li class="navigation-menu-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
     </nav>
   </header>
 
@@ -58,11 +56,11 @@
         <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
           замаскированным под стандартную камеру.</p>
         <a class="button" href="#">ПОДРОБНЕЕ</a>
-        <dl class="quadcopter-list">
-          <dt class="quadcopter-term">Дальность полета</dt>
-          <dd class="quadcopter-def">800 м</dd>
-          <dt class="quadcopter-term">Радиус поражения</dt>
-          <dd class="quadcopter-def">50 м</dd>
+        <dl class="features-list">
+          <dt class="features-term">Дальность полета</dt>
+          <dd class="features-def">800 м</dd>
+          <dt class="features-term">Радиус поражения</dt>
+          <dd class="features-def">50 м</dd>
         </dl>
       </div>
       <div class="slider-watch">
@@ -72,9 +70,9 @@
         <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
           соблюдать диету.</p>
         <a class="button" href="#">ПОДРОБНЕЕ</a>
-        <dl class="quadcopter-list">
-          <dt class="quadcopter-term">48 часов</dt>
-          <dd class="quadcopter-def">Без подзарядки</dd>
+        <dl class="features-list">
+          <dt class="features-def">48 часов</dt>
+          <dd class="features-term">Без подзарядки</dd>
         </dl>
       </div>
       <div class="slider-selfies">
@@ -84,13 +82,13 @@
         <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
           метров длиной и весом всего 5 кг.</p>
         <a class="button" href="catalog.html">ПОДРОБНЕЕ</a>
-        <dl class="selfies-list">
-          <dt class="selfies-term">Длина палки</dt>
-          <dd class="selfies-def">8,5 м</dd>
-          <dt class="selfies-term">Вес палки</dt>
-          <dd class="selfies-def">5 кг</dd>
-          <dt class="selfies-term">Материал</dt>
-          <dd class="selfies-def">Карбон</dd>
+        <dl class="features-list">
+          <dt class="features-term">Длина палки</dt>
+          <dd class="features-def">8,5 м</dd>
+          <dt class="features-term">Вес палки</dt>
+          <dd class="features-def">5 кг</dd>
+          <dt class="features-term">Материал</dt>
+          <dd class="features-def">Карбон</dd>
         </dl>
       </div>
       <ol class="slider-pagination">
@@ -202,7 +200,7 @@
       <h2 class="contacts-title">Контакты</h2>
       <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.</p>
       <p class="contacts-description">Заодно сможете проверить работоспособность покупки. </p>
-      <h3>Интернет-магазин «Девайс»</h3>
+      <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
       <address class="contacts-address">
         <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
@@ -221,8 +219,8 @@
         длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
       <p class="newsletter-tick">Это бесплатно</p>
       <form class="newsletter-subscriber" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" name="newsletter-email" id="newsletter-mail" placeholder="Ваш e-mail">
-        <input type="submit" value="ПОДПИСАТЬСЯ">
+        <input class="email-input" type="email" name="newsletter-email" id="newsletter-mail" placeholder="Ваш e-mail">
+        <button class="email-button" type="submit">ПОДПИСАТЬСЯ</button>
       </form>
     </section>
   </main>
@@ -231,34 +229,34 @@
     <img class="logo" src="images/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
     <h2 class="visually-hidden">Давайте дружить</h2>
     <address>
-      <p class="footer-contacts-address-text">Санкт-Петербург, набережная<br>
+      <p class="footer-contacts-address">Санкт-Петербург, набережная<br>
         реки Карповки, 5, литера П.</p>
       <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </address>
     <ul class="navigation-menu menu-footer">
       <li class="delivery-navigation-item menu-footer-item">
-        <a class="delivery-navigation-link menu-footer-link" href="#">Доставка</a>
+        <a class="navigation-link menu-footer-link" href="#">Доставка</a>
       </li>
       <li class="warranty-navigation-item menu-footer-item">
-        <a class="warranty-navigation-link menu-footer-link" href="#">Гарантия</a>
+        <a class="navigation-link menu-footer-link" href="#">Гарантия</a>
       </li>
       <li class="contacts-navigation-item menu-footer-item">
-        <a class="contacts-navigation-link menu-footer-link" href="#">Контакты</a>
+        <a class="navigation-link menu-footer-link" href="#">Контакты</a>
       </li>
     </ul>
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="https://t.me/htmlacademy" target="_blank">
+        <a class="media-link" href="https://t.me/htmlacademy" target="_blank">
           <span class="visually-hidden">Telegram</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+        <a class="media-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
           <span class="visually-hidden">YouTube</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://twitter.com/htmlacademy_ru" target="_blank">
+        <a class="media-link" href="https://twitter.com/htmlacademy_ru" target="_blank">
           <span class="visually-hidden">Twitter</span>
         </a>
       </li>
