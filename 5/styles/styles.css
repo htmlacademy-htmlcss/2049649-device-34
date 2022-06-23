@@ -43,42 +43,52 @@ body {
 .page-header {
   color: #000000;
   background-color: #FFE17F;
+  padding: 0 60px;
 }
 
-/*Содержание хедера обернутого в див*/
-.page-header-container {
-  width: 1040px;
+*{
+  box-sizing: border-box;
+}
+
+/*Хедер*/
+.container {
+  width: 1160px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .navigation-logo {
   width: 145px;
 }
 
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-}
-
 .navigation-wrapper {
   display: flex;
-  align-items: center;
+}
+
+.catalogue-button {
+  width: 295px;
 }
 
 .catalogue-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation-list {
-  width: 590px;
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+}
+
+.navigation-menu-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.product-button {
+  width: 220px;
+  display: block;
+  margin-bottom: 61px;
 }
 /*Заканчиваются флекс-хедер*/
 
@@ -139,14 +149,6 @@ body {
   flex-grow: 1;
 }
 
-/*Мейн обернутый в див*/
-.page-container {
-  display: flex;
-  flex-direction: column;
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .best_products {
   width: 1160px;
   margin: 0 auto;
@@ -163,17 +165,6 @@ body {
   margin-right: 40px;
 }
 
-.slider-wrapper {
-  width: 560px;
-  display: flex;
-  flex-direction: column;
-}
-
-.slider-title, .slider-description {
-  padding: 0;
-  margin: 0;
-}
-
 .features-list {
   display: flex;
 }
@@ -183,14 +174,26 @@ body {
   padding: 0;
   order: -1;
 }
-/*заканчиваются флекс-слайдеры*/
-
-.slider-title {
+/*Заканчиваются флекс-слайдеры*/
+.main-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
   color: #000000;
+}
+
+.slider-title, .slider-description {
+  padding: 0;
+  margin: 0;
+}
+
+.slider-title {
+  margin-bottom: 29px;
+}
+
+.slider-description {
+  margin-bottom: 51px;
 }
 
 .features-def {
@@ -202,14 +205,7 @@ body {
   font-size: 16px;
 }
 
-/*Категории товаров магазина*/
-.product-category {
-  width: 1160px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
+/*Категории товаров*/
 .products-list {
   padding: 0;
   margin: 0;
@@ -245,23 +241,23 @@ body {
   background-color: #F0F0F0;
 }
 
-.advantages-container {
-  width: 1160px;
-  margin: 0 auto;
+.advantages-wrapper {
   display: flex;
-  flex-direction: column;
+}
+
+.advantages-button-wrapper {
+  width: 280px;
+  margin-right: 120px;
+}
+
+.advantages-item {
+  max-width: 600px;
 }
 
 .advantages-list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.advantages-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 /*Заканчиваются флекс-преимущества*/
 
@@ -277,12 +273,8 @@ body {
 }
 
 .advantages-subtitle {
-  font-family: "Raleway", sans-serif;
-  font-size: 50px;
-  line-height: 50px;
-  font-weight: 800;
-  color: #000000;
   background-color: #F0F0F0;
+  margin-bottom: 34px;
 }
 
 /*Спец-предложение по доставке*/
@@ -320,14 +312,14 @@ body {
 
 .companies-list {
   padding-left: 0;
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 .contacts-schedule {
   list-style: none;
   padding: 0;
-  margin: 0;
 
+  margin-bottom: 30px;
 }
 
 .companies {
@@ -340,11 +332,19 @@ body {
 /*Заканчиваются флекс-о-нас*/
 
 .companies-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 50px;
-  line-height: 50px;
-  font-weight: 800;
-  color: #000000;
+  margin-bottom: 48px;
+}
+
+.companies-description {
+  margin-bottom: 30px;
+}
+
+.contacts-description {
+  margin-bottom: 30px;
+}
+
+.contacts-address-text {
+  margin-bottom: 0;
 }
 
 .companies-item {
@@ -352,6 +352,10 @@ body {
   font-weight: 700;
   color: #000000;
   letter-spacing: -0.02em;
+}
+
+.companies-item:not(:last-child) {
+  margin-bottom: 19px;
 }
 
 .button {
@@ -375,6 +379,8 @@ body {
 .contacts-subtitle {
   font-size: 24px;
   font-weight: 700;
+
+  margin-bottom: 15px;
 }
 
 .contacts-address-text {
@@ -389,25 +395,26 @@ body {
 /*Рассылка*/
 .newsletter {
   background-color: #F0F0F0;
-  width: 1160px;
-  margin: 0 auto;
+}
+
+.newsletter-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.newsletter-wrapper {
-  width: 348px;
+.newsletter-title {
+  max-width: 450px;
 }
 
-.newsletter-description-wrapper {
-  width: 553px;
+.newsletter-description {
+  max-width: 700px;
 }
 
 .newsletter-tick-wrapper {
-  width: 1160px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -456,14 +463,12 @@ body {
 }
 
 .footer-address-wrapper {
-  width: 250px;
-  margin-right: 110px;
+  width: 240px;
+  margin-right: 120px;
 }
 
 .footer-menu-wrapper {
-  min-width: 500px;
-  display: flex;
-  flex-direction: column;
+  width: 445px;
 }
 
 .footer-social-list {
@@ -475,27 +480,30 @@ body {
   margin-right: 15px;
 }
 
-.footer-contacts-wrapper {
-  width: 180px;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  align-items: end;
-
-}
-
 .menu-footer {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+}
+
+.menu-footer-item:not(:last-child) {
+  margin-right: 35px;
 }
 
 .footer-social-list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.footer-contacts-wrapper {
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  align-items: end;
+
 }
 /*Заканчиваются футер-флексы*/
 
