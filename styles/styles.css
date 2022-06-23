@@ -243,11 +243,11 @@ body {
 
 .advantages-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .advantages-button-wrapper {
   width: 280px;
-  margin-right: 120px;
 }
 
 .advantages-item {
@@ -271,6 +271,9 @@ body {
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
+
+  padding-right: 120px;
+  width: 280px;
 }
 
 .advantages-subtitle {
