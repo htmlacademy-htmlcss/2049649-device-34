@@ -31,6 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  min-width: 1440px;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -64,10 +65,6 @@ body {
   display: flex;
 }
 
-.catalogue-button {
-  width: 295px;
-}
-
 .catalogue-wrapper {
   display: flex;
   align-items: center;
@@ -79,6 +76,7 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-menu-item:not(:last-child) {
@@ -121,8 +119,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 
-  min-width: 293px;
-  margin-right: 276px;
+  width: 293px;
 }
 
 .navigation-link {
@@ -304,8 +301,6 @@ body {
 
 /*Секция о нас*/
 .index-columns {
-  width: 1160px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
