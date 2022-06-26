@@ -7,47 +7,43 @@
   <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header-container">
+<header class="page-header container">
+    <a class="navigation-logo" href="index.html">
+      <img class="logo" src="images/logo-device.svg" width="145" height="37" alt="Логотип интернет-магазина «Девайс»">
+    </a>
 
-      <a class="navigation-logo" href="index.html">
-        <img class="logo" src="images/logo-device.svg" width="145" height="37" alt="Логотип интернет-магазина «Девайс»">
-      </a>
+    <nav class="main-navigation">
+      <div class="navigation-wrapper">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="catalogue-search" class="visually-hidden" hidden>Текст поиска</label>
+          <input class="search-input" name="search-text" type="text" id="catalogue-search" placeholder="Текст поиска">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+        <a class="user-menu user-login" href="#">Войти</a>
+        <a class="user-menu" href="#">Сравнить</a>
+        <a class="user-menu" href="#">Корзина</a>
+      </div>
 
-      <nav class="main-navigation">
-        <div class="navigation-wrapper">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="catalogue-search" class="visually-hidden">Текст поиска</label>
-            <input class="search-input" name="search-text" type="text" id="catalogue-search" placeholder="Текст поиска">
-            <button class="search-button" type="submit">Найти</button>
-          </form>
-          <a class="user-menu user-login" href="#">Войти</a>
-          <a class="user-menu" href="#">Сравнить</a>
-          <a class="user-menu" href="#">Корзина</a>
-        </div>
-
-        <div class="catalogue-wrapper">
-          <button class="catalogue-button" type="button">
-            <span class="catalogue-span">КАТАЛОГ ТОВАРОВ</span>
-          </button>
-          <ul class="navigation-list">
-            <li class="navigation-menu-item">
-              <a class="navigation-link" href="#">Доставка</a>
-            </li>
-            <li class="navigation-menu-item">
-              <a class="navigation-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-menu-item">
-              <a class="navigation-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+      <div class="catalogue-wrapper">
+        <button class="catalogue-button" type="button">
+          <span class="catalogue-span">КАТАЛОГ ТОВАРОВ</span>
+        </button>
+        <ul class="navigation-list">
+          <li class="navigation-menu-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <main class="main-inner main-container">
-    <div class="page-container">
+  <main class="main-container container">
       <header class="inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
@@ -199,17 +195,15 @@
           </ol>
         </div>
       </section>
-    </div>
   </main>
 
   <footer class="main-footer">
     <div class="page-footer-container">
       <div class="footer-address-wrapper">
         <img class="logo" src="images/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
-        <h2 class="visually-hidden">Давайте дружить</h2>
-        <address>
-          <p class="footer-contacts-address">Санкт-Петербург, набережная<br>
-            реки Карповки, 5, литера П.</p>
+        <address class="footer-contacts-address">
+          Санкт-Петербург, набережная<br>
+          реки Карповки, 5, литера П.
         </address>
       </div>
 
