@@ -7,41 +7,41 @@
   <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-<header class="page-header container">
-    <a class="navigation-logo" href="index.html">
-      <img class="logo" src="images/logo-device.svg" width="145" height="37" alt="Логотип интернет-магазина «Девайс»">
-    </a>
+  <header class="page-header container">
+  <a class="navigation-logo" href="index.html">
+    <img class="logo" src="images/logo-device.svg" width="145" height="37" alt="Логотип интернет-магазина «Девайс»">
+  </a>
 
-    <nav class="main-navigation">
-      <div class="navigation-wrapper">
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="catalogue-search" class="visually-hidden" hidden>Текст поиска</label>
-          <input class="search-input" name="search-text" type="text" id="catalogue-search" placeholder="Текст поиска">
-          <button class="search-button" type="submit">Найти</button>
-        </form>
-        <a class="user-menu user-login" href="#">Войти</a>
-        <a class="user-menu" href="#">Сравнить</a>
-        <a class="user-menu" href="#">Корзина</a>
-      </div>
+  <nav class="main-navigation">
+    <div class="navigation-wrapper">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="catalogue-search" class="visually-hidden" hidden>Текст поиска</label>
+        <input class="search-input" name="search-text" type="text" id="catalogue-search" placeholder="Текст поиска">
+        <button class="search-button" type="submit">Найти</button>
+      </form>
+      <a class="user-menu user-login" href="#">Войти</a>
+      <a class="user-menu" href="#">Сравнить</a>
+      <a class="user-menu user-cart" href="#">Корзина</a>
+    </div>
 
-      <div class="catalogue-wrapper">
-        <button class="catalogue-button" type="button">
-          <span class="catalogue-span">КАТАЛОГ ТОВАРОВ</span>
-        </button>
-        <ul class="navigation-list">
-          <li class="navigation-menu-item">
-            <a class="navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <div class="catalogue-wrapper">
+      <button class="catalogue-button" type="button">
+        <span class="catalogue-span">КАТАЛОГ ТОВАРОВ</span>
+      </button>
+      <ul class="navigation-list">
+        <li class="navigation-menu-item">
+          <a class="navigation-link" href="#">Доставка</a>
+        </li>
+        <li class="navigation-menu-item">
+          <a class="navigation-link" href="#">Гарантия</a>
+        </li>
+        <li class="navigation-menu-item">
+          <a class="navigation-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
   <main class="main-container container">
       <header class="inner-header">
@@ -120,12 +120,14 @@
               <option value="new-products">Новинки</option>
               <option value="price">Цена</option>
             </select>
-            <a href="#" class="button button-light">
-              <span class="visually-hidden">От наилучших</span>
-            </a>
-            <a class="button" href="#">
-              <span class="visually-hidden">От наихудших</span>
-            </a>
+            <div class="button-light-wrap">
+              <a href="#" class="button button-light">
+                <span class="visually-hidden">От наилучших</span>
+              </a>
+              <a class="button button-light" href="#">
+                <span class="visually-hidden">От наихудших</span>
+              </a>
+            </div>
           </div>
 
           <ol class="product-list">
@@ -166,30 +168,31 @@
           </ol>
 
           <button class="button pagination-show-more" type="button">Загрузить еще</button>
+
           <ol class="pagination">
-            <li class="pagination-item">
+            <li class="pagination-item pagination-item-button back-button">
               <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="back-button">Назад</span>
+                <span class="pagination-button">Назад</span>
               </a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
+              <a class="pagination-link pagination-current" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
+              <a class="pagination-link pagination-current" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <a class="pagination-link pagination-current" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">15</a>
+              <a class="pagination-link pagination-current" href="#">15</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item pagination-item-button go-button">
               <a class="pagination-link pagination-prev pagination-next" href="#">
-                <span class="go-button">Вперёд</span>
+                <span class="pagination-button">Вперёд</span>
               </a>
             </li>
           </ol>
@@ -198,9 +201,9 @@
   </main>
 
   <footer class="main-footer">
-    <div class="page-footer-container">
+    <div class="page-footer-container container">
       <div class="footer-address-wrapper">
-        <img class="logo" src="images/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
+        <img class="logo-yellow" src="images/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
         <address class="footer-contacts-address">
           Санкт-Петербург, набережная<br>
           реки Карповки, 5, литера П.
@@ -208,7 +211,7 @@
       </div>
 
       <div class="footer-menu-wrapper">
-        <ul class="navigation-menu menu-footer">
+        <ul class="navigation-menu menu-footer-list">
           <li class="delivery-navigation-item menu-footer-item">
             <a class="navigation-link menu-footer-link" href="#">Доставка</a>
           </li>
