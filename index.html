@@ -20,8 +20,8 @@
           <button class="search-button" type="submit">Найти</button>
         </form>
         <a class="user-menu user-login" href="#">Войти</a>
-        <a class="user-menu" href="#">Сравнить</a>
-        <a class="user-menu" href="#">Корзина</a>
+          <a class="user-menu" href="#">Сравнить</a>
+          <a class="user-menu user-cart" href="#">Корзина</a>
       </div>
 
       <div class="catalogue-wrapper">
@@ -44,11 +44,10 @@
   </header>
 
   <main class="main-index main-container">
-    <div class="page-container">
-      <h1 class="visually-hidden" hidden>«Девайс» интернет-магазин электроники</h1>
+      <h1 class="visually-hidden">«Девайс» интернет-магазин электроники</h1>
 
-      <section class="best_products">
-        <h2 class="visually-hidden" hidden>Лучшие товары магазина</h2>
+      <section class="best_products container">
+        <h2 class="visually-hidden">Лучшие товары магазина</h2>
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
@@ -58,7 +57,7 @@
 
         <div class="slider-product">
           <div class="slider-column">
-            <h3 class="visually-hidden" hidden>Товар Квадрокоптер</h3>
+            <h3 class="visually-hidden">Товар Квадрокоптер</h3>
             <img src="images/slider/quadcopter.png" width="560" height="560" alt="Квадрокоптер">
           </div>
           <div class="slider-wrapper">
@@ -67,17 +66,21 @@
               замаскированным под стандартную камеру.</p>
             <a class="button product-button" href="#">ПОДРОБНЕЕ</a>
             <dl class="features-list">
-              <dt class="features-term">Дальность полета</dt>
-              <dd class="features-def">800 м</dd>
-              <dt class="features-term">Радиус поражения</dt>
-              <dd class="features-def">50 м</dd>
+              <div class="spec-wrap">
+                <dt class="features-term">Дальность полета</dt>
+                <dd class="features-def">800 м</dd>
+              </div>
+              <div class="spec-wrap">
+                <dt class="features-term">Радиус поражения</dt>
+                <dd class="features-def">50 м</dd>
+              </div>
             </dl>
           </div>
         </div>
 
         <div class="slider-product">
           <div class="slider-column">
-            <h3 class="visually-hidden" hidden>Товар Фитнес-браслет</h3>
+            <h3 class="visually-hidden">Товар Фитнес-браслет</h3>
             <img src="images/slider/fitness-bracelet.png" width="560" height="560" alt="Фитнес-браслет">
           </div>
           <div class="slider-wrapper">
@@ -86,15 +89,17 @@
               соблюдать диету.</p>
             <a class="button product-button" href="#">ПОДРОБНЕЕ</a>
             <dl class="features-list">
-              <dt class="features-term">Без подзарядки</dt>
-              <dd class="features-def">48 часов</dd>
+              <div class="spec-wrap">
+                <dt class="features-term">Без подзарядки</dt>
+                <dd class="features-def">48 часов</dd>
+              </div>
             </dl>
           </div>
         </div>
 
         <div class="slider-product">
           <div class="slider-column">
-            <h3 class="visually-hidden" hidden>Товар Палка для селфи</h3>
+            <h3 class="visually-hidden">Товар Палка для селфи</h3>
             <img src="images/slider/selfie-stick.png" width="560" height="560" alt="Палка для селфи">
           </div>
           <div class="slider-wrapper">
@@ -103,12 +108,18 @@
               метров длиной и весом всего 5 кг.</p>
             <a class="button product-button" href="catalog.html">ПОДРОБНЕЕ</a>
             <dl class="features-list">
-              <dt class="features-term">Длина палки</dt>
-              <dd class="features-def">8,5 м</dd>
-              <dt class="features-term">Вес палки</dt>
-              <dd class="features-def">5 кг</dd>
-              <dt class="features-term">Материал</dt>
-              <dd class="features-def">Карбон</dd>
+              <div class="spec-wrap">
+                <dt class="features-term">Длина палки</dt>
+                <dd class="features-def">8,5 м</dd>
+              </div>
+              <div class="spec-wrap">
+                <dt class="features-term">Вес палки</dt>
+                <dd class="features-def">5 кг</dd>
+              </div>
+              <div class="spec-wrap">
+                <dt class="features-term">Материал</dt>
+                <dd class="features-def">Карбон</dd>
+              </div>
             </dl>
           </div>
         </div>
@@ -172,7 +183,7 @@
 
       <section class="advantages">
         <div class="advantages-wrapper container">
-          <h2 class="visually-hidden" hidden>Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages-button-wrapper">
             <button class="advantages-item-button" type="button">
               <span class="delivery-icon">Доставка</span>
@@ -208,7 +219,7 @@
         </div>
       </section>
 
-      <div class="scarce-commodity">
+      <div class="scarce-commodity container">
         <a class="delivery-special-offer" href="#">ДОСТАВИМ РЕДКИЙ ТОВАР ПОД ЗАКАЗ</a>
       </div>
 
@@ -227,7 +238,7 @@
         </section>
 
         <section class="contacts">
-          <h2 class="contacts-title main-title">Контакты</h2>
+          <h2 class="companies-title main-title">Контакты</h2>
           <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. <br>
             Заодно сможете проверить работоспособность покупки.</p>
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -240,18 +251,18 @@
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <a class="button" href="#">НАПИШИТЕ НАМ</a>
+          <a class="button contacts-button" href="#">НАПИШИТЕ НАМ</a>
         </section>
       </div>
 
       <section class="newsletter">
         <div class="newsletter-container container">
-          <h2 class="newsletter-title">Подпишитесь<br>
+          <h2 class="newsletter-title main-title">Подпишитесь<br>
             на рассылку</h2>
           <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br>
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
-          <div class="newsletter-tick-wrapper">
+          <div class="newsletter-tick-wrapper container">
             <p class="newsletter-tick">Это бесплатно</p>
             <form class="newsletter-subscriber" action="https://echo.htmlacademy.ru/" method="post">
               <input class="email-input" type="email" name="newsletter-email" id="newsletter-mail"
@@ -261,13 +272,12 @@
           </div>
         </div>
       </section>
-    </div>
   </main>
 
   <footer class="main-footer">
-    <div class="page-footer-container">
+    <div class="page-footer-container container">
       <div class="footer-address-wrapper">
-        <img class="logo" src="images/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
+        <img class="logo-yellow" src="images/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
         <address class="footer-contacts-address">
           Санкт-Петербург, набережная<br>
             реки Карповки, 5, литера П.
@@ -275,7 +285,7 @@
       </div>
 
       <div class="footer-menu-wrapper">
-        <ul class="navigation-menu menu-footer">
+        <ul class="navigation-menu menu-footer-list">
           <li class="delivery-navigation-item menu-footer-item">
             <a class="navigation-link menu-footer-link" href="#">Доставка</a>
           </li>
