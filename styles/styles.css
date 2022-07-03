@@ -733,14 +733,14 @@ body {
   display: flex;
 }
 
-.catalog-filter {
+.catalog-container {
   width: 320px;
+  padding: 0 60px;
 }
 
 .catalog-right-column {
   width: 840px;
   background-color: #FFFFFF;
-  padding: 0 40px;
 }
 
 .product-list {
@@ -750,7 +750,7 @@ body {
   list-style: none;
   margin-top: 0;
   margin-bottom: 44px;
-  padding: 0;
+  padding: 70px 40px 0;
 }
 
 /*Заканчивются флексы-товары*/
@@ -763,6 +763,7 @@ body {
   color: #000000;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .catalog-filter-title {
@@ -785,9 +786,8 @@ body {
 
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  /*padding: 25px 40px;*/
+  align-items: center;
+  padding: 25px 40px;
 }
 
 .button-light {
@@ -822,13 +822,14 @@ body {
 }
 
 .pagination-show-more {
-  padding: 18px 295px;
-  margin-bottom: 45px;
+  margin: 0 40px 45px;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
-  width: 100%;
+  width: 760px;
+  padding: 18px 0;
+  border: 3px solid #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 .pagination {
@@ -837,24 +838,9 @@ body {
   list-style: none;
   background-color: #EBEBEB;
 
-  margin-top: 0;
-  margin-bottom: 76px;
+  margin: 0 40px 78px;
   padding: 0;
-}
-
-.pagination-current {
-  display: block;
-  width: 40px;
-  padding: 10px 16px;
-
-}
-
-.pagination-item {
-  padding: 10px 15px;
-}
-
-.pagination-item-button {
-  padding: 25px;
+  width: 760px;
 }
 
 .back-button {
@@ -873,6 +859,11 @@ body {
   background-color: #EBEBEB;
   letter-spacing: 0.2em;
   text-decoration: none;
+
+  display: block;
+  height: 40px;
+  width: 40px;
+  padding: 10px 15px;
 }
 
 .pagination-prev {
@@ -885,4 +876,9 @@ body {
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  display: block;
+  padding: 25px;
+  width: 141px;
+  height: 71px;
 }
