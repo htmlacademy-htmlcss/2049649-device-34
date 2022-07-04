@@ -724,9 +724,15 @@ body {
   text-decoration: none;
 }
 
+.filter {
+  display: block;
+  margin-bottom: 60px;
+}
+
 /*Список товаров с фильтрами*/
 .catalog-products {
   background-color: #F0F0F0;
+  padding-top: 25px;
 }
 
 .catalog-products-wrapper {
@@ -751,6 +757,20 @@ body {
   margin-top: 0;
   margin-bottom: 44px;
   padding: 70px 40px 0;
+}
+
+.product-card-image {
+  display: flex;
+  margin-bottom: 32px;
+  width: 360px;
+  object-fit: contain;
+  background-color: #FFFFFF;
+}
+
+.card-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*Заканчивются флексы-товары*/
@@ -786,8 +806,8 @@ body {
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 25px 40px;
+  align-items: start;
+  padding: 0 40px 25px;
 }
 
 .button-light {
