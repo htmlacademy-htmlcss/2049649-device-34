@@ -30,7 +30,7 @@
               Сравнить</a>
           </li>
           <li class="user-menu-item">
-            <a class="user-menu-link cart-link" href="#">
+            <a class="user-menu-link cart-link user-menu-wrap" href="#">
               <p class="user-menu-wrap">
                 <span class="user-menu-number">2</span>
                 <svg class="cart-icon" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,7 @@
         <button class="catalogue-button" type="button">
           <span class="catalogue-span">КАТАЛОГ ТОВАРОВ</span>
         </button>
-        <div class="catalogue-popover .popover-open" hidden>
+        <div class="catalogue-popover">
           <div class="catalog-list">
             <ul class="subcatalog-list">
               <li class="catalog-item">
@@ -111,6 +111,7 @@
             <img src="images/slider/quadcopter.png" width="560" height="560" alt="Квадрокоптер">
           </div>
           <div class="slider-wrapper">
+            <p class="slider_number">01</p>
             <p class="slider-title main-title">Порхает как бабочка, <br> жалит как пчела!<br></p>
             <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную камеру.</p>
@@ -128,12 +129,13 @@
           </div>
         </div>
 
-        <div class="slider-product">
+        <div class="slider-product hidden">
           <div class="slider-column">
             <h3 class="visually-hidden">Товар Фитнес-браслет</h3>
             <img src="images/slider/fitness-bracelet.png" width="560" height="560" alt="Фитнес-браслет">
           </div>
           <div class="slider-wrapper">
+            <p class="slider_number">02</p>
             <p class="slider-title main-title">Худеем<br>правильно!</p>
             <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
               соблюдать диету.</p>
@@ -147,12 +149,13 @@
           </div>
         </div>
 
-        <div class="slider-product">
+        <div class="slider-product hidden">
           <div class="slider-column">
             <h3 class="visually-hidden">Товар Палка для селфи</h3>
             <img src="images/slider/selfie-stick.png" width="560" height="560" alt="Палка для селфи">
           </div>
           <div class="slider-wrapper">
+            <p class="slider_number">03</p>
             <p class="slider-title main-title">Делай селфи,<br>как Бен Стиллер! </p>
             <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
               метров длиной и весом всего 5 кг.</p>
@@ -256,20 +259,26 @@
             <li class="delivery-advantages-item advantages-item">
               <h3 class="advantages-subtitle main-title">Доставка</h3>
               <p class="advantages-description">Мы с удовольствием доставим ваш товар прямо
+                <br>
                 к вашему подъезду совершенно бесплатно! Ведь
+                <br>
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
-            <li class="warranty-advantages-item advantages-item">
+            <li class="warranty-advantages-item advantages-item hidden">
               <h3 class="advantages-subtitle main-title">Гарантия</h3>
               <p class="advantages-description">Если из-за возгорания купленного у нас товара у вас
+                <br>
                 сгорит дом — не переживайте, мы выдадим вам новый.
+                <br>
                 Товар, не дом, конечно же.</p>
             </li>
-            <li class="credit-advantages-item advantages-item">
+            <li class="credit-advantages-item advantages-item hidden">
               <h3 class="advantages-subtitle main-title">Кредит</h3>
-              <p class="advantages-description">Залезть в долговую яму стало проще!
-                Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка,
-                разумеется.</p>
+              <p class="advantages-description">Залезть в долговую яму стало проще! Кредитные
+                <br>
+                консультанты подберут для вас наиболее выгодные
+                <br>
+                условия кредита. Выгодные для банка, разумеется.</p>
             </li>
           </ul>
         </div>
@@ -381,7 +390,7 @@
       </div>
 
       <div class="footer-contacts-wrapper">
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-contacts-phone" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/" target="_blank">
           <svg class="logo-html" aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" fill="black"/>

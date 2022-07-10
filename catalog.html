@@ -23,23 +23,23 @@
         <ul class="user-menu-list">
           <li class="user-menu-item">
             <a class="user-menu-link login-link" href="#">
-              Войти</a>
+              Войти
+            </a>
           </li>
           <li class="user-menu-item">
             <a class="user-menu-link sort-link" href="#">
-              Сравнить</a>
+              Сравнить
+            </a>
           </li>
           <li class="user-menu-item">
             <a class="user-menu-link cart-link" href="#">
-              <p class="user-menu-wrap">
-                <span class="user-menu-number">2</span>
-                <svg class="cart-icon" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
-                    fill="#000"/>
-                </svg>
-                Корзина
-              </p>
+              <span class="user-menu-number">2</span>
+              <svg class="cart-icon" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
+                  fill="#000"/>
+              </svg>
+              Корзина
             </a>
           </li>
         </ul>
@@ -49,7 +49,7 @@
         <button class="catalogue-button" type="button">
           <span class="catalogue-span">КАТАЛОГ ТОВАРОВ</span>
         </button>
-        <div class="catalogue-popover .popover-open" hidden>
+        <div class="catalogue-popover">
           <div class="catalog-list">
             <ul class="subcatalog-list">
               <li class="catalog-item">
@@ -121,10 +121,10 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -138,7 +138,7 @@
 
                       <label class="catalog-filter-label" for="max-price">до
                       <input class="range-input" type="number" value="5000" name="max-price"
-                             id="max-price" style="width: 90px"/>
+                             id="max-price"/>
                       </label>
                   </div>
                 </div>
