@@ -646,6 +646,7 @@ body {
   padding: 15px 66px 15px 0;
 
   cursor: pointer;
+  z-index: 2;
 }
 
 .navigation-link {
