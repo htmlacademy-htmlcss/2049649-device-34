@@ -2182,6 +2182,10 @@ body {
   z-index: 1;
 }
 
+.product-card-button:active {
+  background: #FFC700;
+}
+
 .product-card-link:active::before {
   content: "";
   position: absolute;
@@ -2429,9 +2433,31 @@ body {
   padding: 20px;
   font-size: 16px;
   line-height: 20px;
-  border: none;
   background-color: #f0f0f0;
   color: #000000;
+  border: 2px solid #F0F0F0;
+  outline: none;
+}
+
+.modal-input:hover {
+  background-color: #dcdcdc;
+  border: 2px solid #dcdcdc;
+}
+
+.modal-input:focus {
+  border: 2px solid #AF4FFF;
+}
+
+.modal-input:focus:invalid {
+  border: 2px solid #FF3D3D;
+}
+
+.modal-input:disabled {
+  opacity: 0.1;
+}
+
+.modal-input:focus:invalid + .modal-help {
+  color: #ff3d3d;
 }
 
 .modal-input::placeholder {
@@ -2538,14 +2564,19 @@ body {
 }
 
 .amount-product-less {
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: 2px;
   order: -1;
 }
 
 .amount-product-more {
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: 2px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
 .amount-product-more::after {
@@ -2583,29 +2614,6 @@ body {
   text-align: center;
   margin: 0;
   appearance: none;
-}
-
-.modal-input:hover {
-  background-color: #dcdcdc;
-}
-
-.modal-input:focus {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-  z-index: 1;
-}
-
-.modal-input:focus:invalid {
-  border: 2px solid #FF3D3D;
-  outline-offset: 1px;
-}
-
-.modal-input:disabled {
-  opacity: 0.1;
-}
-
-.modal-input:focus.invalid + .modal-help {
-  color: #ff3d3d;
 }
 
 .modal-submit {
