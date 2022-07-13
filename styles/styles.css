@@ -905,7 +905,7 @@ body {
 
 /*Категории товаров*/
 .product-category {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .products-list {
@@ -998,15 +998,15 @@ body {
 /*Преимущества*/
 .advantages {
   margin-bottom: 70px;
-  background: linear-gradient(to bottom, #ffffff 102px, #f0f0f0 120px);
-  padding-bottom: 72px;
+  background: linear-gradient(to bottom, #ffffff 102px, #f0f0f0 102px);
+  padding-bottom: 65px;
 }
 
 .advantages-wrapper {
   display: flex;
   align-items: center;
   position: relative;
-  top: 7px;
+  top: -4px;
 }
 
 .advantages-button-wrapper {
